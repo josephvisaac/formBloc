@@ -51,6 +51,7 @@ class MyHomePage extends StatelessWidget {
       stream: textFieldBloc.password,
       builder: (ctx, snapshot) {
         return TextFormField(
+          onChanged: textFieldBloc.changePasword,
           decoration: InputDecoration(
             hintText: '',
             labelText: 'password',
